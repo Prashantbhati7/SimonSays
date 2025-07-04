@@ -1,0 +1,131 @@
+.homecontainer {
+    background-image: url(https://wallpapers.com/images/hd/four-color-lines-zhhtf3ekjs6xbfg9.jpg);
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    margin-top: 0;
+    justify-content: center;
+    align-items: center;
+}
+body{
+    margin-top: 0;
+    padding: 0;
+}
+.startbutton{
+    background-color: rgb(125, 183, 230);
+    height: 4rem;
+    width: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 20px 5px rgb(59, 178, 230);
+    border-radius: 5rem;
+}
+.navbar{
+    background-color: rgba(74, 109, 161, 0.652) !important;
+    height: 4rem;
+}
+.backbutton{
+    margin-left: 5px;
+    height: 2rem;
+    width: 4rem; 
+    background-color: rgba(125,183,230);
+    color: rgb(0, 0, 0);
+    border-radius: 1rem;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.gamecontainer{
+    background-image: url(https://img.freepik.com/premium-photo/abstract-dark-blue-blurred-gradient-background-wallpaper-product-presentation-decor-equipment_718526-13302.jpg);
+    height: 100vh;
+    width: 100vw;
+    margin: 0;padding: 0;
+    background-size: cover;
+    background-position: center center;
+}
+.leaderboardcontainer{
+    background-image: url(https://media.istockphoto.com/id/1138786634/vector/led-video-wall-screen-texture-background-vector-blue-and-red-purple-color-light-led-diode.jpg?s=612x612&w=0&k=20&c=hTFqhbmqdZGAv8NwUqsq93JtwuC3U9StaWDWWY9fOi8=);
+    height: 100vh;
+    width: 100vw;
+    margin: 0;padding: 0;
+    color: white;
+    background-size: cover;
+    background-position: center center;
+}
+.startheading{
+    margin: auto;
+    margin-top: 2.5rem;
+    color: white;
+    text-align: center;
+}
+.score{
+    margin: auto;
+    margin-top: 2rem;
+    color: cornsilk;
+    text-align: center;
+}
+.row1{
+    display: flex;
+    margin-top: 2rem;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 3rem;
+}
+.row2{
+    display: flex;
+    margin-top: 2rem;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 3rem;
+}
+.box{
+    height: 12rem;
+    width: 12rem;
+    border-radius: 5px;
+}
+.gameover{
+    background-color: red;
+}
+.red{
+    background-color: #ff9999 !important;
+}
+.yellow{
+    background-color: #ffff99 !important;
+}
+.green{
+    background-color: #99ee99 !important;
+}
+.blue{
+    background-color: #9999ff !important;
+}
+.alertefct{
+    background-color: white !important;
+}
+.newflash{
+    background-color: #040404 !important;
+    border: 2px solid greenyellow !important;
+    box-shadow: 0px 0px 12px white;
+}
+.darkblue{
+    background-color: #0000cc !important;
+    box-shadow: 0px 0px 8px white;
+}
+.darkred{
+    background-color: #cc0000 !important;
+    box-shadow: 0px 0px 8px white;
+}
+.darkyellow{
+    background-color: #cccc00 !important; 
+    box-shadow: 0px 0px 8px white;
+}
+.darkgreen{
+    background-color: #024a02 !important;
+    box-shadow: 0px 0px 8px white;
+}

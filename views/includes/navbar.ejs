@@ -1,0 +1,25 @@
+<nav class="navbar navbar-expand-lg sticky-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/"><i class="fa-brands fa-scribd"></i></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link active" aria-current="page" href="/">Home</a>
+        <a class="nav-link" href="/info">How to play?</a>
+        <a class="nav-link" href="/leaderboard" aria-disabled="true">Leaderboard</a>
+      </div>
+      <div class="navbar-nav ms-auto">
+        <% if(!request.user){ %>
+        <a class="nav-link" href="/signup"><b>SignUp</b></a>
+        <a class="nav-link" href="/login"><b>log in</b></a>
+        <% } %>
+        <% if(request.user) {%>
+        <a class="nav-link" href="/logout">log out</a>    
+        <% } %>
+        </div>
+    </div>
+  </div>
+</nav>

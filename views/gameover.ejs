@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gameover</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <style>
+        body {
+            /* background-image: url(https://static.vecteezy.com/system/resources/thumbnails/008/367/479/small/game-over-pixel-background-vector.jpg);  */
+            background-color: rgba(10, 10, 10, 0.95);
+            background-size: cover;
+            background-position: center center;
+            height: 100v;
+            color: white;
+            text-align: center;
+        }
+
+        h1 {
+            text-shadow: 2px 2px 12px white;
+            /* font-size: xx-large; */
+            font-size: 100px;
+            margin: 2rem;
+            padding: 1rem;
+        }
+        .score{
+            font-size: 40px;
+            margin: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="gameover">
+        <h1>GAMEOVER!</h1>
+        <h2 class="score">Score
+            <%=currentScore%>
+        </h2>
+        <div class="btns d-flex flex-row justify-content-center column-gap-5">
+        <a type="button" class="btn btn-outline-light" href="/game">continue</a>
+        <a type="button" class="btn btn-outline-danger" href="/">quit</a>
+        </div>
+
+        <div class="design mt-5">
+            <div class="spinner-border text-danger" role="status">
+                <span class="visually-hidden">Loading...</span>
+              </div>
+              <div class="spinner-border text-primary" role="status">
+                <span class="visually-hidden">Loading...</span>
+              </div>
+              <div class="spinner-border text-success" role="status">
+                <span class="visually-hidden">Loading...</span>
+              </div>
+              <div class="spinner-border text-info" role="status">
+                <span class="visually-hidden">Loading...</span>
+              </div>
+        </div>
+    </div>
+</body>
+
+</html>

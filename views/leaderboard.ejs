@@ -1,0 +1,19 @@
+<% layout("./boilerplate") %>
+<style>
+    .center{
+        text-align: center;
+        text-decoration: wavy underline;
+        box-shadow: 0px 0px 10px gold;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+</style>
+<div class="leaderboardcontainer">
+<h1 class="display-1 center">Leaderborad</h1>
+
+<% for (let user of result){ %>
+    <div class="row ms-auto">
+    <span class="col-6 h2 ms-5"><%= user.username %></span>
+    <span class="col-3 h2 ms-5" ><%= user.score%></span>
+    </div>
+    <% } %>
+</div>
