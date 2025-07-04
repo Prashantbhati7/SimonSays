@@ -21,7 +21,6 @@ const Mongostore  = require('connect-mongo');
 app.use(express.urlencoded({ extended: true }));
 mongoose.set('strictQuery', true);
 
-
 const db_url = process.env.ATLASDB_URL;
 
 main()
@@ -49,6 +48,7 @@ store.on("error",()=>{
 
 
 app.use(session({
+    store:store,
     secret: process.env.SECRET,
     resave: false,
     saveUninitialized: true,
